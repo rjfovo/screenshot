@@ -22,6 +22,7 @@
 #include <QClipboard>
 #include <QEventLoop>
 #include <QTimer>
+#include <QFile>  // 添加 QFile 头文件
 
 #include <QGuiApplication>
 #include <QQmlContext>
@@ -60,7 +61,7 @@ void ScreenshotView::start()
 void ScreenshotView::delay(int value)
 {
     QEventLoop waitLoop;
-    QTimer::singleShot(value, &waitLoop, SLOT(quit()));
+    QTimer::singleShot(value * 1000, &waitLoop, SLOT(quit())); // 修复：将秒转换为毫秒
     waitLoop.exec();
 
     start();
