@@ -4,12 +4,10 @@
 <context>
     <name>ScreenshotView</name>
     <message>
-        <location filename="../src/screenshotview.cpp" line="96"/>
         <source>The picture has been saved to %1</source>
         <translation>Şəkil %1 kataloqunda saxlanıldı</translation>
     </message>
     <message>
-        <location filename="../src/screenshotview.cpp" line="127"/>
         <source>The picture has been saved to the clipboard</source>
         <translation>Şəkil mübadilə yaddaşında saxlanıldı</translation>
     </message>
